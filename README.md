@@ -116,31 +116,29 @@
 
 ---
 
-### [IBC-Window — Interactive Brokers Automation](https://github.com/vikassharma545/IBC-Window)
+### InteractiveBrokerAlgo — US Options Algo Trading Engine
+`Private` `Enterprise` &mdash; *Pranjali Growcap Pvt. Ltd.*
 
-`Open Source` `DevOps`
-
-> **Problem:** Running Interactive Brokers TWS/Gateway for automated trading requires manual daily login, 2FA handling, and restart management — unreliable for 24/5 operations.
+> **Problem:** Executing systematic options selling strategies on US markets required a fully automated, crash-recoverable system capable of running multiple strategies concurrently on a headless AWS server with zero manual intervention.
 >
-> **Solution:** Pre-configured IBC (v3.23.0) setup for Windows with unattended login, automatic 2FA retry, daily auto-restart, weekend cold restart, and remote control via telnet. Includes Task Scheduler integration for hands-off operation.
+> **Solution:** Built a ZMQ hub-spoke trading engine — a central `TWSMasterHub` maintains a single TWS connection while 5 independent strategy processes (SRE, SRE SL, BRE, B120, SRE TP) communicate via ZeroMQ. Features a 13-module SDK with CSV state machines for crash recovery, smart order execution with price chasing and stale-fill detection, ATM pointer-walk strike selector, exchange-hosted STP LMT orders, and real-time monitoring via Google Sheets and Telegram.
 >
-> **Impact:** Enables fully unattended Interactive Brokers automation — critical infrastructure for the enterprise trading platform.
+> **Impact:** Production system on AWS EC2 executing options strategies across SPX, SPY, and ES — fully hands-off from market open to close with complete audit trail and automated IBC-managed TWS restarts.
 
-`IBC` `Batch Scripting` `Task Scheduler` `TWS/Gateway`
+`Python 3.12` `ZeroMQ` `ib_async` `Interactive Brokers` `AWS EC2` `IBC` `Google Sheets API` `Telegram Bot`
 
 ---
 
-### [PGC Strategy Analysis Dashboard](https://github.com/vikassharma545/PgcStreamlitDashboard)
+### PGC Backtest System — Options Strategy Backtesting Engine
+`Private` `Enterprise` &mdash; *Pranjali Growcap Pvt. Ltd.*
 
-`Internal Tool` `Analytics`
-
-> **Problem:** Analyzing options selling strategies required expensive third-party data subscriptions and fragmented tooling.
+> **Problem:** Backtesting options selling strategies across millions of parameter combinations on Indian, MCX, and US markets — no commercial platform supported the required customization depth.
 >
-> **Solution:** Modular Streamlit web app framework with multiple dashboards — real-time Straddle Selling optimizer with interactive heatmaps, advanced filtering, and strategy-level P&L breakdowns. Can be deployed directly from GitHub raw URLs without cloning.
+> **Solution:** Built `pgcbacktest` — a NumPy-vectorized backtesting engine with O(log n) price lookup, synthetic future ATM detection, SD-based strike routing, and 37-level portfolio stop-loss. Includes a FileLock-based orchestrator running N parallel terminals (any terminal claims any date), a Polars + DuckDB dashboard aggregator, and a tkinter GUI pushing live heatmaps to Excel via xlwings.
 >
-> **Impact:** Eliminated recurring data costs, accelerated strategy iteration from days to minutes, and enabled non-technical traders to self-serve analytics.
+> **Impact:** Processes **50,000+ parameter combos × 250+ dates × 6 DTEs** across NIFTY, BANKNIFTY, SENSEX, MCX, and 40+ US symbols in 8–24 hours on 16 parallel terminals. Powers all strategy research at Pranjali Growcap.
 
-`Streamlit` `Polars` `Plotly` `Python`
+`Python` `NumPy` `Polars` `DuckDB` `Parquet` `FileLock` `xlwings` `tkinter`
 
 ---
 
@@ -190,12 +188,12 @@ Simplified Telegram bot library (Tele_Easy_Bot) for sending messages, images, do
 ## GitHub Analytics
 
 <div align="center">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=vikassharma545&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117" height="165" alt="GitHub Stats" />
-  <img src="https://streak-stats.demolab.com?user=vikassharma545&theme=github-dark-blue&hide_border=true&background=0d1117" height="165" alt="GitHub Streak" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=vikassharma545&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&text_color=FFFFFF&title_color=58A6FF&icon_color=58A6FF" height="165" alt="GitHub Stats" />
+  <img src="https://streak-stats.demolab.com?user=vikassharma545&theme=github-dark-blue&hide_border=true&background=0d1117&stroke=FFFFFF&ring=58A6FF&fire=FF6D00&currStreakLabel=FFFFFF&sideLabels=FFFFFF&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=CCCCCC" height="165" alt="GitHub Streak" />
 </div>
 
 <div align="center">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=vikassharma545&layout=compact&langs_count=8&theme=github_dark&hide_border=true&bg_color=0d1117" alt="Top Languages" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=vikassharma545&layout=compact&langs_count=8&theme=github_dark&hide_border=true&bg_color=0d1117&text_color=FFFFFF&title_color=58A6FF" alt="Top Languages" />
 </div>
 
 ---
