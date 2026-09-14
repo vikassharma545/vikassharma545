@@ -188,12 +188,12 @@ Simplified Telegram bot library (Tele_Easy_Bot) for sending messages, images, do
 ## GitHub Analytics
 
 <div align="center">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=vikassharma545&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&text_color=FFFFFF&title_color=58A6FF&icon_color=58A6FF" height="165" alt="GitHub Stats" />
-  <img src="https://streak-stats.demolab.com?user=vikassharma545&theme=github-dark-blue&hide_border=true&background=0d1117&stroke=FFFFFF&ring=58A6FF&fire=FF6D00&currStreakLabel=FFFFFF&sideLabels=FFFFFF&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=CCCCCC" height="165" alt="GitHub Streak" />
+  <img src="https://github-readme-stats-salesp07.vercel.app/api?username=vikassharma545&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&text_color=FFFFFF&title_color=58A6FF&icon_color=58A6FF" height="165" alt="GitHub Stats" />
+  <img src="https://streak-stats.demolab.com?user=vikassharma545&theme=github-dark-blue&hide_border=true&background=0d1117&stroke=FFFFFF&ring=58A6FF&fire=FF6D00&currStreakLabel=FFFFFF&sideLabels=FFFFFF&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=CCCCCC&v=2" height="165" alt="GitHub Streak" />
 </div>
 
 <div align="center">
-  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=vikassharma545&layout=compact&langs_count=8&theme=github_dark&hide_border=true&bg_color=0d1117&text_color=FFFFFF&title_color=58A6FF" alt="Top Languages" />
+  <img src="https://github-readme-stats-salesp07.vercel.app/api/top-langs/?username=vikassharma545&layout=compact&langs_count=8&theme=github_dark&hide_border=true&bg_color=0d1117&text_color=FFFFFF&title_color=58A6FF" alt="Top Languages" />
 </div>
 
 ---
